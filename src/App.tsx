@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Buttons } from './components/Buttons/Buttons';
 
-export default App;
+
+
+const button =
+[
+  {
+    types: [ 'light-primary-disabled', 'light-secondary-normally', 'light-primary-normally',
+    'light-secondary-normally','light-primary-hover', 'light-secondary-hover',
+    'light-secondary-disabled', 'dark-primary-normally', 'dark-secondary-normally',
+     'dark-primary-hover', 'dark-secondary-hover', 'dark-primary-disabled', 'dark-secondary-disabled'],
+    text: "Hello",
+  }
+]
+const App = () => {
+  return <div className="App">
+	{button.map((buttonn) => <Buttons types = {buttonn.types} text = {buttonn.text} />)}
+  </div>;
+};
+
+export { App };
