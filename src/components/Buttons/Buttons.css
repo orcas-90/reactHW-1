@@ -1,5 +1,6 @@
-.Buttons {
+.Button {
     box-sizing: border-box;
+    border: none;
     padding: 10px, 25px, 10px, 25px;
     width: 92px;
     height: 41px;
@@ -9,76 +10,77 @@
     align-items: center;
     border-radius: 10px;
     margin: 10px;
+
 }
 
-.Buttons_type_light-primary-normally {
+.Button_type_light-primary-normally {
     background-color: #000000;
     color: white;
     border:none;
 }
 
-.Buttons_type_light-secondary-normally {
+.Button_type_light-secondary-normally {
     background-color: white;
     color: #000000;
     border: solid, 2px, black;
 }
 
-.Buttons_type_light-primary-hover {
+.Button_type_light-primary-hover {
     background-color: #5F5F5F;
     color: white;
     border: none;
 }
 
-.Buttons_type_light-secondary-hover {
+.Button_type_light-secondary-hover {
     background-color: #ffffff;
     color: #5F5F5F;
     border: solid, 2px, #5F5F5F;
 }
 
-.Buttons_type_light-primary-disabled {
+.Button_type_light-primary-disabled {
     background-color: #CFCFCF;
     color: white;
     border: none;
 }
 
-.Buttons_type_light-secondary-disabled {
+.Button_type_light-secondary-disabled {
     background-color: #ffffff;
     color: #CFCFCF;
     border: solid, 2px, #CFCFCF;
 }
 
 
-.Buttons_type_dark-primary-normally {
+.Button_type_dark-primary-normally {
     background-color: #FFFFFF;
     color:#000000;
     border:none;
 }
 
-.Buttons_type_dark-secondary-normally {
+.Button_type_dark-secondary-normally {
     background-color: #000000;
     color: #FFFFFF;
     border: solid, 2px, #FFFFFF;
 }
 
-.Buttons_type_dark-primary-hover {
+.Button_type_dark-primary-hover {
     background-color: CFCFCF;
     color: #000000;
     border: none;
 }
 
-.Buttons_type_dark-secondary-hover {
+.Button_type_dark-secondary-hover {
     background-color: #000000;
     color: #FFFFFF;
     border: solid, 2px, #FFFFFF;
 }
 
-.Buttons_type_dark-primary-disabled {
+.Button_type_dark-primary-disabled {
     background-color: #5F5F5F;
     color: white;
     border: none;
 }
 
-.Buttons_type_dark-secondary-disabled {
+.Button_type_dark-secondary-disabled {
     background-color: #000000;
     color: #5F5F5F;
     border: solid, 2px,#5F5F5F;

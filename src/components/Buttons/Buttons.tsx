@@ -1,21 +1,38 @@
 import React from 'react';
 
-import { cnButtons } from './Buttons.classname';
+import { cnButton } from './Buttons.classname';
 
 import type { FC } from 'react';
 
 import './Buttons.css';
 
-type ButtonsProps = {
-	text: string,
-    types: string[],
+type ButtonProps = {
+  text: string;
+  Background?: string;
+  ColorText?: string;
+  ColorBorder?: string;
+};
 
-}
+const Button: FC<ButtonProps> = ({
+  text,
+  Background,
+  ColorText,
+  ColorBorder,
+}) => {
+  return (
+    <div>
+      <button
+        className={cnButton({})}
+        style={{
+          backgroundColor: Background,
+          color: ColorText,
+          border: '2px solid ' + ColorBorder,
+        }}
+      >
+        {text}
+      </button>
+    </div>
+  );
+};
 
-const Buttons: FC<ButtonsProps> = ({ text, types }) => {return (
-   types.map((type) => <button  className={cnButtons( {type})}>
-        {text} </button>))}
-
-
-
-  export { Buttons };
+export { Button };
